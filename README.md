@@ -7,7 +7,7 @@ Este proyecto calcula subredes utilizando VLSM y muestra los rangos, máscaras y
 ## 📸 Evidencias
 
 ### 🧮 Pantalla principal
-![Pantalla principal](evidencias/inicio.pgn)
+![Pantalla principal](evidencias/inicio.png)
 
 ### ✅ formulario lleno 
 ![Lleno](evidencias/lleno.png)
