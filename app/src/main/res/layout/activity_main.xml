@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:padding="20dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora VLSM"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desarrollado por: Omar Simbaña"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="#4E4E4E"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+
+        <EditText
+            android:id="@+id/etIp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección IP (ej. 192.168.0.0)"
+            android:inputType="text"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:elevation="3dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <EditText
+            android:id="@+id/etPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prefijo (ej. 24)"
+            android:inputType="number"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:elevation="3dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <EditText
+            android:id="@+id/etSubnets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de subredes"
+            android:inputType="number"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:elevation="3dp"
+            android:layout_marginBottom="12dp" />
+
+
+        <LinearLayout
+            android:id="@+id/hostsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón calcular -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULAR"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:padding="14dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Contenedor de resultados -->
+        <LinearLayout
+            android:id="@+id/containerResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+</ScrollView>
